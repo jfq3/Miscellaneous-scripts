@@ -6,7 +6,7 @@
 
 # Creates a dictionary from a tab-delimited file of SRA ID's and sample names.
 # Uses the dictionary to rename fastq files from SRA sequence IDs to sample names.
-# Run the script form the directory containing the fastq sequences and the 
+# Run the script from the directory containing the fastq sequences and the 
 # tab-delimited file of SRA fastq file ID's and sample names.
 # Files are assumed to be paired reads with names of the form:
 # SRR8648700_1.fastq
