@@ -5,4 +5,4 @@ miga_sumdb.sh - Use this script to summarize the taxonomy information for all of
 
 rename_sra_files.py - Given a tab-delimited file associating SRA run names with sample names, this script renames downloaded files by their sample names.
 
-test_figaro.sh - Use this script to test your installation of FIGARO after following the installation instrucions at https://john-quensen.com/tutorials/figaro/.
+test_figaro.sh - Use this script to test your installation of FIGARO after following the installation instructions at https://john-quensen.com/tutorials/figaro/.
