@@ -1,6 +1,5 @@
 #!/usr/bin/python
 
-# myls.py
 # Import the argparse library
 import argparse
 import os
@@ -42,14 +41,20 @@ with open(args.out_file, 'w') as output_file:
 			f=open(os.path.join(directory, filename))
 			genome=filename.split('.')[0]
 			data = json.load(f)
-			com=(data.get('stats').get('completeness')[0])
-			cont=(data.get('stats').get('contamination')[0])
-			qual=(data.get('stats').get('quality'))
-			qual=round(qual, 2)
-			items=[str(com), str(cont), str(qual), genome]
-			out='\t'.join(items)
-			print(out)
-			output_file.write("%s\n" % '\t'.join(items))
+			try:
+				com=(data.get('stats').get('completeness')[0])
+				cont=(data.get('stats').get('contamination')[0])
+				qual=(data.get('stats').get('quality'))
+				qual=round(qual, 2)
+				items=[str(com), str(cont), str(qual), genome]
+				out='\t'.join(items)
+				print(out)
+				output_file.write("%s\n" % '\t'.join(items))
+			except TypeError:
+				items=["No data", genome]
+				out='\t'.join(items)
+				print(out)
+				output_file.write("%s\n" % '\t'.join(items))
 			# Closing file
 			f.close()
 	output_file.close()
