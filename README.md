@@ -8,3 +8,7 @@ miga_sumdb.sh - Use this script to summarize the taxonomy information for all of
 rename_sra_files.py - Given a tab-delimited file associating SRA run names with sample names, this script renames downloaded files by their sample names.
 
 test_figaro.sh - Use this script to test your installation of FIGARO after following the installation instructions at https://john-quensen.com/tutorials/figaro/.
+
+copy_miga_16s_files.sh - cd to the MiGA results directory and then run this script to copy all 16S sequences MiGA found to the sub-directory 16S_sequences. Empty files are automatically deleted. Because more than one 16S sequences may occur in a genome or bin, each file is potentially a multi-fasta file.
+
+seq_id_2_file_name.py - Ths script is useful when processing 16S sequences retrieved from MiGA results. For example, for all files in the sub-directory 16S_sequences created by copy_miga_16s_files.sh, it writes separate fasta files for each sequence named to match the genome or bin they came from. The names are appended with a digit to keep separate multiple copies from the same genome or bin.
