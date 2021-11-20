@@ -1,7 +1,7 @@
 # Miscellaneous-scripts
 As the name suggest, these are miscellaneous scripts I have written to help with certain tasks encountered when working with sequencing data.
 
-miga_completeness.py - Use this script to extract a report on genome completeness, contamination and quality to a tab-delimited text file.
+miga_completeness.py - Use this script to extract a report on genome completeness, contamination and quality from a MiGA project directory to a tab-delimited text file.
 
 miga_sumdb.sh - Use this script to summarize the taxonomy information for all of the genomes in your MiGA project. Run it from the directory <project_name>/data/09.distances/05.taxonomy. 
 
@@ -13,6 +13,6 @@ copy_miga_16s_files.sh - cd to the MiGA results directory and then run this scri
 
 seq_id_2_file_name.py - This script is useful when processing 16S sequences retrieved from MiGA results. For example, for all files in the sub-directory 16S_sequences created by copy_miga_16s_files.sh, it writes separate fasta files for each sequence named to match the genome or bin they came from. The names are appended with a digit to keep separate multiple copies from the same genome or bin.
 
-extract_gene_sequences_from_genbank.py - This script extracts the nucleotide and protein sequences of a gine or list of genes from a GenBank file. The nucleotide and protein sequences are written to separate fasta files: nucleotides.fasta and proteins.fasta.
+extract_gene_sequences_from_genbank.py - This script extracts the nucleotide and protein sequences of a gene or list of genes from a GenBank file. The nucleotide and protein sequences are written to separate fasta files: nucleotides.fasta and proteins.fasta.
 usage: extract_gene_sequences_from_genbank.py [-h] [-f gbk_file] [-l gene_list] [-g single_gene]
 Must provide the name of a single gene or a list of genes in a text file, one gene per line.
