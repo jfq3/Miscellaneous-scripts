@@ -22,7 +22,7 @@ wget "https://data.qiime2.org/2020.2/tutorials/atacama-soils/1p/reverse.fastq.gz
  
  # Run FIGARO
  # cd to installation folder
- cd ~/figaro
+ cd ~/figaro-master/figaro
  python figaro.py -i ~/test_figaro/ -o ~/test_figaro/ -f 10 -r 10 -a 253 -F zymo
  
  conda deactivate
