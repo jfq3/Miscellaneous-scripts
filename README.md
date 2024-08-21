@@ -16,3 +16,5 @@ seq_id_2_file_name.py - This script is useful when processing 16S sequences retr
 extract_gene_sequences_from_genbank.py - This script extracts the nucleotide and protein sequences of a gene or list of genes from a GenBank file. The nucleotide and protein sequences are written to separate fasta files: nucleotides.fasta and proteins.fasta.
 usage: extract_gene_sequences_from_genbank.py [-h] [-g gbk_file] [-f feature [gene_id protein_id locus_tag product]] [-l gene_list] [-g single_gene]
 Must provide the name of a single gene or a list of genes in a text file, one gene per line.
+
+.bashrc and .bash_profile are bash configuration files for use with a Mac cmomputer. They change the behaviour of the terminal prompt to make it more informative. Put them in your user home directory after you have configured the terminal to use bash instead of zsh.
