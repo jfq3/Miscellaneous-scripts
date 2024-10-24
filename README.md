@@ -18,3 +18,5 @@ usage: extract_gene_sequences_from_genbank.py [-h] [-g gbk_file] [-f feature [ge
 Must provide the name of a single gene or a list of genes in a text file, one gene per line.
 
 .bashrc and .bash_profile are bash configuration files for use with a Mac cmomputer. They change the behaviour of the terminal prompt to make it more informative. Put them in your user home directory after you have configured the terminal to use bash instead of zsh.
+
+splitInterleavedFASTQ.py splits interleaved FASTQ files into separate forward and reverse read files. Assumes the order of the sequences is stricly alternate beginning with read 1 (forward) and then read 2 (reverse) for each pair.
