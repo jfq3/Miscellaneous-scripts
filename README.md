@@ -23,7 +23,9 @@ Must provide the name of a single gene or a list of genes in a text file, one ge
 
 **scan_annot_files_for_genes.sh** - MicrobeAnnotator outputs annotation files with the extension ".annot." This script scans all annot files in the present directoy for the presence of genes and outputs a tab-delimited file named "gene_presence.tsv." The genes to look for must be provided in a file named "genes.txt," one gene per line. The first column in the output file is the annot file name and subsequent columns give the presence (1) or absence (0) of each gene included in gene.txt.
 
-**gtdb2rdp_train_files.py ** - A python3 script for parsing 16S rRNA gene sequences downloaded from GTDB and creating the files rawSeqs.fasta and rawTaxonomy.txt required for training the RDP Classifier.
+**rdp2rdp_train_files.py** - A python3 script for parsing the raw RDP Classifier training data downloaded from Sourceforge and creating the files rawSeqs.fasta and rawTaxonomy.txt required for training the RDP Classifier. This allows using a subset of the training data or adding to it.
+
+**gtdb2rdp_train_files.py** - A python3 script for parsing 16S rRNA gene sequences downloaded from GTDB and creating the files rawSeqs.fasta and rawTaxonomy.txt required for training the RDP Classifier.
 
 **lineage2taxTrain3.py** - Python3 version of lineage2taxTrain.py. Converts the rawTaxonomy file to ready4train.taxonmy.txt, a reformatted version of the taxonomy file required for training the RDP Classifier.
 
