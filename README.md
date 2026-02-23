@@ -22,3 +22,8 @@ Must provide the name of a single gene or a list of genes in a text file, one ge
 **splitInterleavedFASTQ.py** splits interleaved FASTQ files into separate forward and reverse read files. Assumes the order of the sequences is stricly alternate beginning with read 1 (forward) and then read 2 (reverse) for each pair.
 
 **scan_annot_files_for_genes.sh** - MicrobeAnnotator outputs annotation files with the extension ".annot." This script scans all annot files in the present directoy for the presence of genes and outputs a tab-delimited file named "gene_presence.tsv." The genes to look for must be provided in a file named "genes.txt," one gene per line. The first column in the output file is the annot file name and subsequent columns give the presence (1) or absence (0) of each gene included in gene.txt.
+
+**addFullLineage3.py** - Python3 version of addFullLineage.py required for formatting fasta sequences for training the RDP Classifier.
+
+**lineage2taxTrain3.py** - Python3 version of lineage2taxTrain.py required for formating a taxonomy file for trainint the RDP Classifier.
+
