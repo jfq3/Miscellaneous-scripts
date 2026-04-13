@@ -41,7 +41,7 @@ def main(args):
 			os.rename(old_file_name, new_file_name)
 
 if __name__ == "__main__":
-        usage = "python3 rename_sra_files.py sra_sample_names_file.tsv"
+        usage = "python rename_sra_files.py sra_sample_names_file.tsv"
         if len(sys.argv) != 2 :
             print("Incorrect number of arguments.\nUsage is : ", usage)
             sys.exit()
