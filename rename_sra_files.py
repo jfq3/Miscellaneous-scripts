@@ -1,4 +1,4 @@
-#! usr/bin/python3
+#! usr/bin/python
 
 # rename_sra_files.py
 # John Quensen
@@ -17,7 +17,7 @@
 # SRR8648700	112-30-1
 # SRR8648699	112-30-2
 
-# Usage is: python3 rename_sra_files.py sra_sample_names_file.tsv
+# Usage is: python rename_sra_files.py sra_sample_names_file.tsv
 
 import sys
 import os
