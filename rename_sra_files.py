@@ -1,4 +1,4 @@
-#! usr/bin/python
+#!usr/bin/python
 
 # rename_sra_files.py
 # John Quensen
